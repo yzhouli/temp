@@ -3,18 +3,17 @@ import json
 import numpy as np
 import tensorflow as tf
 
-from spammer_detection.util.participant_behavior import ParticipantBehavior
-from spammer_detection.util.self_behavior import SelfBehavior
+from util.participant_behavior import ParticipantBehavior
+from util.self_behavior import SelfBehavior
 
 
 class User2AudioDataset(object):
 
-    def __init__(self, mode, path_ref, batch_size, event_size, time_interval, normal_size, event_threshold,
+    def __init__(self, mode, path_ref, batch_size, event_size, time_interval, event_threshold,
                  user_threshold, decay_factor, audio_sampling_num, hz):
         self.path_ref = path_ref
         self.batch_size = batch_size
-        self.sb = SelfBehavior(event_size=event_size, time_interval=time_interval,
-                               normal_size=normal_size)
+        self.sb = SelfBehavior(event_size=event_size, time_interval=time_interval)
         self.pb = ParticipantBehavior(event_threshold=event_threshold, user_threshold=user_threshold,
                                       decay_factor=decay_factor, audio_sampling_num=audio_sampling_num, hz=hz,
                                       time_interval=time_interval)
