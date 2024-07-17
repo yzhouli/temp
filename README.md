@@ -15,21 +15,27 @@
   <tr>
     <th width="400" >Weibo Community Management Center</th>
     <th width="900" >The official display website for WEIBO. Displayed content is officially reviewed fake news, user dispute judgements and spammer accounts.</th>
-    <th width="300" >[URL](https://service.account.weibo.com/)</th>
+    <th width="300" >https://service.account.weibo.com/</th>
+  </tr>
+  <tr>
+    <th width="400" >Spammers Display Platform</th>
+    <th width="900" >The official website of WEIBO for displaying spammers' accounts. All displayed accounts are determined based on user submissions and official manual review.</th>
+    <th width="300" >https://service.account.weibo.com/toppunish</th>
+  </tr>
+  <tr>
+    <th width="400" >Spam Display Platform</th>
+    <th width="900" >The official website of WEIBO for displaying spam (fake news).</th>
+    <th width="300" >https://service.account.weibo.com/?type=5\&status=4</th>
+  </tr>
+  <tr>
+    <th width="400" >China Fact Check</th>
+    <th width="900" >A platform to fact-check Chinese international news.</th>
+    <th width="300" >https://chinafactcheck.com/</th>
+  </tr>
+  <tr>
+    <th width="400" >China Joint Internet Rumor-Busting Platform</th>
+    <th width="900" >A joint rumor ( fake news ) display platform launched by the Chinese government. It contains fake news from all social media platforms in China.</th>
+    <th width="300" >https://www.piyao.org.cn/</th>
   </tr>
 </table>
 
-\begin{table*}[!ht]
-	\centering
-		\begin{tabular}{p{0.2\linewidth}|p{0.45\linewidth}|p{0.25\linewidth}}\toprule[1.5pt]
-			Source & Description & URL  \\ \hline \hline
-			Weibo Community Management Center & The official display website for WEIBO. Displayed content is officially reviewed fake news, user dispute judgements and spammer accounts. & https://service.account.weibo.com/ \\ \hline
-			Spammers Display Platform & The official website of WEIBO for displaying spammers' accounts. All displayed accounts are determined based on user submissions and official manual review. & https://service.account.weibo.com/\ toppunish \\ \hline \hline
-			Spam Display Platform & The official website of WEIBO for displaying spam (fake news). & https://service.account.weibo.com/\ ?type=5\&status=4 \\ \hline
-			China Fact Check & A platform to fact-check Chinese international news. &  https://chinafactcheck.com/ \\ \hline
-			China Joint Internet Rumor-Busting Platform & A joint rumor ( fake news ) display platform launched by the Chinese government. It contains fake news from all social media platforms in China. & https://www.piyao.org.cn/ \\ \hline \hline
-			\toprule[1.3pt]
-		\end{tabular}
-	\caption{Resources used in the collection process}
-	\label{table_dataset_1}
-\end{table*}
