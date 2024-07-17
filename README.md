@@ -39,6 +39,6 @@
   </tr>
 </table>
 
-![示例图片](https://github.com/yzhouli/temp/tree/master/fig/weibo.jpg "示例图片标题")
+![示例图片](https://github.com/yzhouli/temp/blob/master/fig/weibo.jpg "示例图片标题")
 
 
