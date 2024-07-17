@@ -39,9 +39,6 @@
   </tr>
 </table>
 
-<object data="https://github.com/yzhouli/temp/blob/master/fig/weibo.jpg" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/yzhouli/temp/blob/master/fig/weibo.jpg">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/yzhouli/temp/blob/master/fig/weibo.jpg">Download PDF</a>.</p>
-    </embed>
-</object>
+<img src="[/path/to/img.jpg](https://github.com/yzhouli/temp/blob/master/fig/weibo.jpg)" alt="Alt text" width="300" height="200">
+
 
