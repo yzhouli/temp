@@ -8,34 +8,34 @@
 
 <table>
   <tr>
-    <th width="400" >Source</th>
-    <th width="900" >Description</th>
-    <th width="300" >URL</th>
+    <th width="300" >Source</th>
+    <th width="600" >Description</th>
+    <th width="100" >URL</th>
   </tr>
   <tr>
-    <th width="400" >Weibo Community Management Center</th>
-    <th width="900" >The official display website for WEIBO. Displayed content is officially reviewed fake news, user dispute judgements and spammer accounts.</th>
-    <th width="300" >https://service.account.weibo.com/</th>
+    <th width="300" >Weibo Community Management Center</th>
+    <th width="600" >The official display website for WEIBO. Displayed content is officially reviewed fake news, user dispute judgements and spammer accounts.</th>
+    <th width="100" >https://service.account.weibo.com/</th>
   </tr>
   <tr>
-    <th width="400" >Spammers Display Platform</th>
-    <th width="900" >The official website of WEIBO for displaying spammers' accounts. All displayed accounts are determined based on user submissions and official manual review.</th>
-    <th width="300" >https://service.account.weibo.com/toppunish</th>
+    <th width="300" >Spammers Display Platform</th>
+    <th width="600" >The official website of WEIBO for displaying spammers' accounts. All displayed accounts are determined based on user submissions and official manual review.</th>
+    <th width="100" >https://service.account.weibo.com/toppunish</th>
   </tr>
   <tr>
-    <th width="400" >Spam Display Platform</th>
-    <th width="900" >The official website of WEIBO for displaying spam (fake news).</th>
-    <th width="300" >https://service.account.weibo.com/?type=5\&status=4</th>
+    <th width="300" >Spam Display Platform</th>
+    <th width="600" >The official website of WEIBO for displaying spam (fake news).</th>
+    <th width="100" >https://service.account.weibo.com/?type=5\&status=4</th>
   </tr>
   <tr>
-    <th width="400" >China Fact Check</th>
-    <th width="900" >A platform to fact-check Chinese international news.</th>
-    <th width="300" >https://chinafactcheck.com/</th>
+    <th width="300" >China Fact Check</th>
+    <th width="600" >A platform to fact-check Chinese international news.</th>
+    <th width="100" >https://chinafactcheck.com/</th>
   </tr>
   <tr>
-    <th width="400" >China Joint Internet Rumor-Busting Platform</th>
-    <th width="900" >A joint rumor ( fake news ) display platform launched by the Chinese government. It contains fake news from all social media platforms in China.</th>
-    <th width="300" >https://www.piyao.org.cn/</th>
+    <th width="300" >China Joint Internet Rumor-Busting Platform</th>
+    <th width="600" >A joint rumor ( fake news ) display platform launched by the Chinese government. It contains fake news from all social media platforms in China.</th>
+    <th width="100" >https://www.piyao.org.cn/</th>
   </tr>
 </table>
 
