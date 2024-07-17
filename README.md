@@ -39,3 +39,5 @@
   </tr>
 </table>
 
+xfun::embed_file("homework.pdf")
+
