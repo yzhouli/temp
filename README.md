@@ -39,6 +39,6 @@
   </tr>
 </table>
 
-<img src="[/path/to/img.jpg](https://github.com/yzhouli/temp/blob/master/fig/weibo.jpg)" alt="Alt text" width="300" height="200">
+<img src="https://github.com/yzhouli/temp/tree/master/fig/weibo.jpg" alt="Alt text" width="300" height="200">
 
 
