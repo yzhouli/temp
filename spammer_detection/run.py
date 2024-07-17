@@ -9,7 +9,7 @@ def main():
     h_dim = 256
     u2a_msd = User2Audio_MultiFeatureSpammerDetection(self_size=self_embedding, embedding_size=event_embedding,
                                                       out_size=predict_size, h_dim=h_dim)
-    dataset_path = '/Users/yangzhou/Desktop/database/KDD/u2a_dataset'  # please replace dataset path
+    dataset_path = ''  # please replace dataset path
     learning_rate = 0.001
     epochs = 100
     batch_size = 2
