@@ -6,16 +6,16 @@
 
 # Datasets Construction
 
-<table width="500">
+<table>
   <tr>
-    <th width="500" >Source</th>
-    <th width="500" >Description</th>
-    <th width="500" >URL</th>
+    <th width="400" >Source</th>
+    <th width="900" >Description</th>
+    <th width="300" >URL</th>
   </tr>
   <tr>
-    <td>Data 1</td>
-    <td>Data 2</td>
-    <td>Data 3</td>
+    <th width="400" >Weibo Community Management Center</th>
+    <th width="900" >The official display website for WEIBO. Displayed content is officially reviewed fake news, user dispute judgements and spammer accounts.</th>
+    <th width="300" >[URL](https://service.account.weibo.com/)</th>
   </tr>
 </table>
 
