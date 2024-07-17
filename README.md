@@ -65,13 +65,12 @@ Due to the construction of an entirely new dataset, we reproduce the baseline al
 
 > *SSDMV*: The network embedding module is replaced with Graph Convolutional Network (GCN). The document embedding module, which consists of historical information, has been replaced with a pre-trained BERT model. The user embedding module uses a convolutional neural network (1D-CNN). Other modules are not changed. All the above neural networks are coded using the Tensorflow framework.
 
-> *MDGCN*: The model source code has been made publicly available in the original paper\footnote{\url{https://github.com/dleyan/MDGCN}}. Subsequently, the model is applied to the TWITTER and WEIBO datasets for performance comparison.
+> *MDGCN*: The model source code has been made publicly available in the original [paper](https://github.com/dleyan/MDGCN). Subsequently, the model is applied to the TWITTER and WEIBO datasets for performance comparison.
 
 > *GCNwithMRF*: A two-layer graph convolutional neural network (GCN) is constructed to represent the features of the user relationship graph. Subsequently, the features are represented non-linearly using the Softmax function. Finally, the MRF layer proposed in the linked original paper is used for the final representation. Moreover, the parameter forgetting rate (Dropout) is set to 0.5. Thus, the model parameters are maximally trained.
 
 > *Nash-Detect*: The objective function is constructed based on our original article formulation. Subsequently, spammers are identified based on TWITTER and WEIBO datasets.
 
 > *SEINE*: A relationship representer is introduced based on the aggregation of user features in the convolutional neural network layer of the user-user relationship graph. During the replication process, the user-user relationship is constructed using three features: response, friend and follow. The basic module of graph convolutional neural network is similar to *SSDMV* and *GCNwithMRF*. The relationship representer is based on the original paper replication. Subsequently, the graph feature matrix is fused. Moreover, two linear layers are used to predict spammers. Meanwhile, the forgetting rate (Dropout) is set to 0.5.
-	\end{itemize} 
 
 
