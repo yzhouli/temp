@@ -5,9 +5,8 @@ class SelfBehavior(object):
     bert_embed = BertTokenizer.from_pretrained('bert-base-uncased')
     bert_model = TFBertModel.from_pretrained('bert-base-uncased')
 
-    def __init__(self, event_size, time_interval, normal_size=29):
+    def __init__(self, event_size, time_interval):
         self.event_size = event_size
-        self.normal_size = normal_size
         self.time_interval = time_interval
 
     def content_embed(self, content):
