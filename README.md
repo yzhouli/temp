@@ -37,6 +37,7 @@
     <th width="600" >A joint rumor ( fake news ) display platform launched by the Chinese government. It contains fake news from all social media platforms in China.</th>
     <th width="100" >https://www.piyao.org.cn/</th>
   </tr>
+Resources used in the collection process
 </table>
 
 ![Weibo Dataset Construction](./fig/weibo.jpg "Weibo Dataset Construction")
