@@ -12,7 +12,7 @@
 
 # B Datasets Construction
 
-**Collection:** The TWITTER dataset uses publicly available datasets[1]. Subsequently, the WEIBO dataset is constructed. The data collection process is shown in Fig. 1.
+**Collection:** The TWITTER dataset uses publicly available datasets. Subsequently, the WEIBO dataset is constructed. The data collection process is shown in Fig. 1.
 
 *Fig. 1 Collection process for spammer accounts*
 ![Weibo Dataset Construction](./fig/weibo.jpg "Weibo Dataset Construction")
