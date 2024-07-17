@@ -55,7 +55,7 @@
 
 **Normal Account Collection:** Firstly, the account addresses are collected randomly. Subsequently, comparisons with the spammer display platform and the fake news dataset filtered for non-existent accounts. After that, normal accounts are screened using manual review. In particular, we collected a large number of normal accounts. Because TWITTER is a typical unbalanced dataset, our initial intention is to construct a balanced dataset to validate the model performance. Therefore, the 343 normal accounts are randomly selected to be put into our publicly available dataset.
 
-**Supplement for Baseline Algorithms**
+# Supplement for Baseline Algorithms
 
 Due to the construction of an entirely new dataset, we reproduce the baseline algorithm. The process of reproducing the supplement is shown as follows:
 
