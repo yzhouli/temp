@@ -1,10 +1,16 @@
-# Experimental Settings
+# Supplement for reproducibility
+
+**Dataset:** TWITTER has been made publicly available, so we are not uploading the unprocessed dataset. This work presents the WEIBO dataset, but the data takes up more than 21 GB for memory, which exceeds the maximum value for supporting material on the AAAI submission website. In the future, we will make the unprocessed dataset publicly available on GitHub. Moreover, the address of the publicly available dataset is linked in the article.
+
+**UA-MSD Model Source Code:** We submit the model source code. In the future, we will make the model source code publicly available on GitHub. Moreover, the address of the publicly available code is linked in the article.
+
+# A Experimental Settings
 
 **Platform Settings:** The experimental platform uses an M1 chip with 16GB memory, Python 3.10 and Tensorflow 2.10. The pre-trained BERT model is a transformers library version 4.37.2, with the model name ”bert-base-uncased”. The MFCC extraction algorithm uses librosa library.
 
 **Algorithm Settings:**  Adam is chosen as the model optimizer, and the learning rate is set to 0.001. Meanwhile, the training time of the model is set to 100 epochs, and the optimal model parameters are preserved using an early stopping mechanism. The hyper-parameters of the model are set as follows: threshold f ansThre=partThre=1000, decay factor α=0.62/0.68, signal length (number of sampling points) T=5000/7500.
 
-# Datasets Construction
+# B Datasets Construction
 
 **Collection:** The TWITTER dataset uses publicly available datasets[1]. Subsequently, the WEIBO dataset is constructed. The data collection process is shown in Fig. 1.
 
@@ -55,7 +61,7 @@
 
 **Normal Account Collection:** Firstly, the account addresses are collected randomly. Subsequently, comparisons with the spammer display platform and the fake news dataset filtered for non-existent accounts. After that, normal accounts are screened using manual review. In particular, we collected a large number of normal accounts. Because TWITTER is a typical unbalanced dataset, our initial intention is to construct a balanced dataset to validate the model performance. Therefore, the 343 normal accounts are randomly selected to be put into our publicly available dataset.
 
-# Supplement for Baseline Algorithms
+# C Supplement for Baseline Algorithms
 
 Due to the construction of an entirely new dataset, we reproduce the baseline algorithm. The process of reproducing the supplement is shown as follows:
 
