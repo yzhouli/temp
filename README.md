@@ -5,6 +5,20 @@
 **Algorithm Settings:**  Adam is chosen as the model optimizer, and the learning rate is set to 0.001. Meanwhile, the training time of the model is set to 100 epochs, and the optimal model parameters are preserved using an early stopping mechanism. The hyper-parameters of the model are set as follows: threshold f ansThre=partThre=1000, decay factor α=0.62/0.68, signal length (number of sampling points) T=5000/7500.
 
 # Datasets Construction
+
+<table width="500">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+  </tr>
+</table>
+
 \begin{table*}[!ht]
 	\centering
 		\begin{tabular}{p{0.2\linewidth}|p{0.45\linewidth}|p{0.25\linewidth}}\toprule[1.5pt]
