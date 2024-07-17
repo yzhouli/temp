@@ -1,4 +1,4 @@
-# Supplement for reproducibility
+# Supplement for Reproducibility
 
 **Dataset:** TWITTER has been made publicly available, so we are not uploading the unprocessed dataset. This work presents the WEIBO dataset, but the data takes up more than 21 GB for memory, which exceeds the maximum value for supporting material on the AAAI submission website. In the future, we will make the unprocessed dataset publicly available on GitHub. Moreover, the address of the publicly available dataset is linked in the article.
 
