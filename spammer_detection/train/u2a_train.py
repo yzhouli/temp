@@ -9,7 +9,6 @@ from spammer_detection.util.data_util import DataUtil
 class User2AudioTrain(object):
 
     def __init__(self, path_ref, learning_rate, model, epochs, batch_size, event_size, time_interval,
-                 normal_size,
                  event_threshold, user_threshold, decay_factor, audio_sampling_num, hz):
         self.path_ref = path_ref
         self.learning_rate = learning_rate
@@ -18,7 +17,6 @@ class User2AudioTrain(object):
         self.batch_size = batch_size
         self.event_size = event_size
         self.time_interval = time_interval
-        self.normal_size = normal_size
         self.event_threshold = event_threshold
         self.user_threshold = user_threshold
         self.decay_factor = decay_factor
@@ -30,14 +28,14 @@ class User2AudioTrain(object):
     def data_init(self):
         self.train_db = User2AudioDataset(mode='train', path_ref=self.path_ref, batch_size=self.batch_size,
                                           event_size=self.event_size,
-                                          time_interval=self.time_interval, normal_size=self.normal_size,
+                                          time_interval=self.time_interval,
                                           event_threshold=self.event_threshold, user_threshold=self.user_threshold,
                                           decay_factor=self.decay_factor, audio_sampling_num=self.audio_sampling_num,
                                           hz=self.hz)
 
         self.test_db = User2AudioDataset(mode='test', path_ref=self.path_ref, batch_size=self.batch_size,
                                          event_size=self.event_size,
-                                         time_interval=self.time_interval, normal_size=self.normal_size,
+                                         time_interval=self.time_interval,
                                          event_threshold=self.event_threshold, user_threshold=self.user_threshold,
                                          decay_factor=self.decay_factor, audio_sampling_num=self.audio_sampling_num,
                                          hz=self.hz)
