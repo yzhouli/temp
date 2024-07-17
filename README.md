@@ -8,6 +8,11 @@
 
 **Collection:** The TWITTER dataset uses publicly available datasets[1]. Subsequently, the WEIBO dataset is constructed. The data collection process is shown in Fig. 1.
 
+*Fig. 1 Collection process for spammer accounts*
+![Weibo Dataset Construction](./fig/weibo.jpg "Weibo Dataset Construction")
+
+**Spammer Account Collection:** In contrast to the TWITTER dataset, WEIBO officially identifies accounts as spammers by restricting access to other users and deleting accounts. The official measures are taken to prevent spammers from continuing to cause harm. Therefore, it is not possible to collect users from the official WEIBO spammer account display platform. However, as WEIBO is a mainstream social platform in China, it is important to identify spammers. To continue the research, we used other strategies to collect spammers' information. Because spammers often send fake news, information about users who send fake news is collected in advance. Subsequently, the candidate users are compared with the WEIBO spammer display platform to construct a spammer dataset. The specific process contains three main steps:
+
 *Table 1 Resources used in the collection process*
 <table>
   <tr>
@@ -42,7 +47,13 @@
   </tr>
 </table>
 
-*Fig. 1 Collection process for spammer accounts*
-![Weibo Dataset Construction](./fig/weibo.jpg "Weibo Dataset Construction")
+*steps 1:* Collecting fake news. The Chinese government has constructed a rumor display platform to reduce the impact of rumors (fake news) (see Table 1 Button). The platform contains information on rumor topics across platforms, including WEIBO, TikTok (Douyin) and Xiaohongshu, etc. Meanwhile, WEIBO has also built its official rumor (fake news) display platform. Therefore, a fake news dataset is collected based on the official platform (see Fig. 1 Left).
+
+*steps 2:* Determine the order of spammer candidate accounts. The fake news dataset contains a large number of candidate accounts. When a user is identified as a spammer by WEIBO officials, the officials take action immediately. Meanwhile, the user's historical behavior information contains a large amount of data. For instance, a user with the nickname "Zhuge Lao Tiezhu" has more than 20,000 historical behaviors. In addition, the average number of user behaviors in the spreading space is more than 370,000, of which 199,753 are comments and 174,994 are retweets. The user's data consumes more than 470 MB. Therefore, it is necessary to determine the user's level of importance to target the best candidates more quickly. Considering that the more users send fake news, the potential to become spammers is higher. Therefore, we prioritize the collection of user history information by weighting the number of sent fake news (see Fig. 1 Left).
+
+*steps 3:* Identify the spammer account. Compare candidate accounts with the spammer display platform (see Table 1 Top) to determine the user is a spammer (see Fig. 1 Right). Simultaneously, information about spammers' historical behavior is put into our publicly available dataset. Due to the high real-time nature of this task, we have only correctly collected 342 items of data after one year. In the future, we will continue the data collection.
+
+**Normal Account Collection:** Firstly, the account addresses are collected randomly. Subsequently, comparisons with the spammer display platform and the fake news dataset filtered for non-existent accounts. After that, normal accounts are screened using manual review. In particular, we collected a large number of normal accounts. Because TWITTER is a typical unbalanced dataset, our initial intention is to construct a balanced dataset to validate the model performance. Therefore, the 343 normal accounts are randomly selected to be put into our publicly available dataset.
+
 
 
