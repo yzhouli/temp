@@ -55,5 +55,23 @@
 
 **Normal Account Collection:** Firstly, the account addresses are collected randomly. Subsequently, comparisons with the spammer display platform and the fake news dataset filtered for non-existent accounts. After that, normal accounts are screened using manual review. In particular, we collected a large number of normal accounts. Because TWITTER is a typical unbalanced dataset, our initial intention is to construct a balanced dataset to validate the model performance. Therefore, the 343 normal accounts are randomly selected to be put into our publicly available dataset.
 
+**Supplement for Baseline Algorithms**
+
+Due to the construction of an entirely new dataset, we reproduce the baseline algorithm. The process of reproducing the supplement is shown as follows:
+
+> *SMSFR*: Mining social user relationship graph information using undirected graph Laplacian. Subsequently, the graph vectors are fed into the SVM algorithm to identify spammers. In this experiment, the user directed relationships are transformed into undirected relationships. Moreover, the SVM model is constructed using scikit-learn library.
+
+> *OSSD*: Introducing user sentiment relations based on the SMSFR model. Specifically, keyword documents are constructed based on user history information. Subsequently, the pre-trained BERT model is used to compute the association relationships between users. Afterwards, the same algorithm as the SMSFR model is used to compute the information of the social network graph and user association graph. After that, a 3:7 weighting is used to aggregate the two information. Moreover, the SVM model is used to identify the spammers.
+
+> *SSDMV*: The network embedding module is replaced with Graph Convolutional Network (GCN). The document embedding module, which consists of historical information, has been replaced with a pre-trained BERT model. The user embedding module uses a convolutional neural network (1D-CNN). Other modules are not changed. All the above neural networks are coded using the Tensorflow framework.
+
+> *MDGCN*: The model source code has been made publicly available in the original paper\footnote{\url{https://github.com/dleyan/MDGCN}}. Subsequently, the model is applied to the TWITTER and WEIBO datasets for performance comparison.
+
+> *GCNwithMRF*: A two-layer graph convolutional neural network (GCN) is constructed to represent the features of the user relationship graph. Subsequently, the features are represented non-linearly using the Softmax function. Finally, the MRF layer proposed in the linked original paper is used for the final representation. Moreover, the parameter forgetting rate (Dropout) is set to 0.5. Thus, the model parameters are maximally trained.
+
+> *Nash-Detect*: The objective function is constructed based on our original article formulation. Subsequently, spammers are identified based on TWITTER and WEIBO datasets.
+
+> *SEINE*: A relationship representer is introduced based on the aggregation of user features in the convolutional neural network layer of the user-user relationship graph. During the replication process, the user-user relationship is constructed using three features: response, friend and follow. The basic module of graph convolutional neural network is similar to *SSDMV* and *GCNwithMRF*. The relationship representer is based on the original paper replication. Subsequently, the graph feature matrix is fused. Moreover, two linear layers are used to predict spammers. Meanwhile, the forgetting rate (Dropout) is set to 0.5.
+	\end{itemize} 
 
 
