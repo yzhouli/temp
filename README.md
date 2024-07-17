@@ -39,6 +39,6 @@
   </tr>
 </table>
 
-<img src="https://github.com/yzhouli/temp/tree/master/fig/weibo.jpg" alt="Alt text" width="300" height="200">
+![示例图片](https://github.com/yzhouli/temp/tree/master/fig/weibo.jpg "示例图片标题")
 
 
