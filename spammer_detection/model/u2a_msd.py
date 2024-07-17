@@ -7,7 +7,7 @@ class User2Audio_MultiFeatureSpammerDetection(keras.Model):
 
     def __init__(self, out_size, self_size, embedding_size, h_dim=64):
         super(User2Audio_MultiFeatureSpammerDetection, self).__init__()
-        self.self_rnn = tf.keras.layers.SimpleRNN(h_dim, activation='tanh', dropout=0.5,
+        self.self_model = tf.keras.layers.SimpleRNN(h_dim, activation='tanh', dropout=0.5,
                                                   input_shape=(self_size, embedding_size),
                                                   return_sequences=False)
 
@@ -32,7 +32,7 @@ class User2Audio_MultiFeatureSpammerDetection(keras.Model):
 
     def call(self, inputs, training=None):
         (self_matrix, participant_matrix) = inputs
-        self_matrix = self.self_rnn(self_matrix)
+        self_matrix = self.self_model(self_matrix)
 
         participant_matrix = tf.expand_dims(input=participant_matrix, axis=-1)
         participant_matrix = self.participant_cnn1(participant_matrix)
