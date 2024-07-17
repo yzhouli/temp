@@ -39,6 +39,6 @@
   </tr>
 </table>
 
-![示例图片](./fig/weibo.jpg "示例图片标题")
+![Weibo Dataset Construction](./fig/weibo.jpg "Weibo Dataset Construction")
 
 
