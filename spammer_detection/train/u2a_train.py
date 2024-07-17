@@ -2,8 +2,8 @@ from tqdm import tqdm
 import tensorflow as tf
 from tensorflow.keras import layers, optimizers, datasets, models
 
-from spammer_detection.dataset.u2a_dataset import User2AudioDataset
-from spammer_detection.util.data_util import DataUtil
+from dataset.u2a_dataset import User2AudioDataset
+from util.data_util import DataUtil
 
 
 class User2AudioTrain(object):
