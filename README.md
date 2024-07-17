@@ -8,9 +8,9 @@
 
 <table width="500">
   <tr>
-    <th>Column 1</th>
-    <th>Column 2</th>
-    <th>Column 3</th>
+    <th width="500" >Source</th>
+    <th width="500" >Description</th>
+    <th width="500" >URL</th>
   </tr>
   <tr>
     <td>Data 1</td>
