@@ -6,6 +6,9 @@
 
 # Datasets Construction
 
+**Collection:** The TWITTER dataset uses publicly available datasets[1]. Subsequently, the WEIBO dataset is constructed. The data collection process is shown in Fig. 1.
+
+*Table 1 Resources used in the collection process*
 <table>
   <tr>
     <th width="300" >Source</th>
@@ -37,9 +40,9 @@
     <th width="600" >A joint rumor ( fake news ) display platform launched by the Chinese government. It contains fake news from all social media platforms in China.</th>
     <th width="100" >https://www.piyao.org.cn/</th>
   </tr>
-*Fig. 1 Resources used in the collection process*
 </table>
 
+*Fig. 1 Collection process for spammer accounts*
 ![Weibo Dataset Construction](./fig/weibo.jpg "Weibo Dataset Construction")
 
 
